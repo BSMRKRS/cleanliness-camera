@@ -20,9 +20,10 @@ while True:
   if during_school_day(now) and interval_test(now,before):
     camera.capture('/home/pi/Pictures/cleanliness/' + str(now).replace(' ','-').replace(':','-').split('.')[0] + '_cleanliness.jpg')
     print 'Captured photo at ' + str(now)
+    import build_html_file
   
 # testing
-if True:
+if False:
   i = 1
   print i, during_school_day(datetime.datetime(2018, 1, 24, 9, 51, 0)) == True; i += 1
   print i, during_school_day(datetime.datetime(2018, 7, 24, 9, 51, 0)) == False; i += 1
