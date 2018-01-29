@@ -1,0 +1,11 @@
+.image-container{
+  width: 70%;
+  float: right;
+  position: fixed;
+  top: 0;
+  left: 30%;
+}
+.list-container{
+  width: 30%;
+  float: left;
+}
